@@ -26,13 +26,13 @@ const VideoSection = () => {
               </div>
               
               <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground">
-                Dr. Nayak's Ideology
+                Dr. Satish Nayak's Ideology
               </h2>
               
               <div className="h-1 w-24 bg-gradient-to-r from-primary to-secondary rounded-full" />
               
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Embracing innovation with compassion, Dr. Nayak's ideology centers on{" "}
+                Embracing innovation with compassion, Dr. Satish Nayak's ideology centers on{" "}
                 <span className="text-primary font-medium">personalized patient care</span>, 
                 integrating advanced surgical techniques with a deep understanding of each individual's needs 
                 to foster healing and restore quality of life.

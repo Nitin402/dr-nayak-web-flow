@@ -19,7 +19,7 @@ const services = [
   },
   {
     icon: Zap,
-    title: "MIS (Minimal Intrusive Surgery)",
+    title: "MIS (Minimal Invasive Surgery)",
     description: "Advanced techniques reducing discomfort and accelerating patient recovery.",
   },
 ];

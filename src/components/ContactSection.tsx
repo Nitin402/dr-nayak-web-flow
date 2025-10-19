@@ -192,6 +192,31 @@ const ContactSection = () => {
                   </div>
                 </CardContent>
               </Card>
+
+              {/* Map Location */}
+              <Card className="shadow-xl border-border/50 hover:shadow-2xl transition-shadow">
+                <CardHeader>
+                  <CardTitle className="text-xl font-serif">Location</CardTitle>
+                  <CardDescription>
+                    Apollo Hospitals, Indore
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Button 
+                    className="w-full"
+                    variant="outline"
+                    asChild
+                  >
+                    <a 
+                      href="https://maps.google.com/?q=Apollo+Hospitals+Indore" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      Get Directions
+                    </a>
+                  </Button>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>

@@ -6,12 +6,12 @@ import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 const testimonials = [
   {
     name: "Priya S.",
-    text: "Dr. Nayak gave me my life back. His expertise and compassionate approach made all the difference during a very difficult time.",
+    text: "Dr. Satish Nayak gave me my life back. His expertise and compassionate approach made all the difference during a very difficult time.",
     rating: 5,
   },
   {
     name: "Anand K.",
-    text: "The entire experience, from consultation to recovery, was handled with utmost professionalism and care. Highly recommend Dr. Nayak.",
+    text: "The entire experience, from consultation to recovery, was handled with utmost professionalism and care. Highly recommend Dr. Satish Nayak.",
     rating: 5,
   },
   {
@@ -46,7 +46,7 @@ const TestimonialsSection = () => {
             Patient Stories & Testimonials
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Real experiences from patients who trusted Dr. Nayak with their care
+            Real experiences from patients who trusted Dr. Satish Nayak with their care
           </p>
         </div>
 

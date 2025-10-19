@@ -70,7 +70,8 @@ const HeroSection = () => {
               <img 
                 src={doctorImage} 
                 alt="Dr. Satish Nayak - Senior Neurosurgeon" 
-                className="w-full h-auto object-cover"
+                className="w-full h-auto object-cover object-top"
+                style={{ maxHeight: '600px' }}
               />
             </div>
             {/* Decorative elements */}

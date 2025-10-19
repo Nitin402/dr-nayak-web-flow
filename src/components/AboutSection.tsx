@@ -19,12 +19,12 @@ const researchPapers = [
 
 const faqs = [
   {
-    question: "What conditions does Dr. Nayak treat?",
-    answer: "Dr. Nayak specializes in treating a wide range of neurological conditions including brain tumors, spinal disorders, herniated discs, spinal stenosis, traumatic brain and spine injuries, and other complex neurosurgical cases.",
+    question: "What conditions does Dr. Satish Nayak treat?",
+    answer: "Dr. Satish Nayak specializes in treating a wide range of neurological conditions including brain tumors, spinal disorders, herniated discs, spinal stenosis, traumatic brain and spine injuries, and other complex neurosurgical cases.",
   },
   {
-    question: "What is Minimal Intrusive Surgery (MIS)?",
-    answer: "Minimal Intrusive Surgery (MIS) is an advanced surgical technique that uses smaller incisions, specialized instruments, and imaging technology. This approach results in less tissue damage, reduced pain, faster recovery times, and shorter hospital stays compared to traditional open surgery.",
+    question: "What is Minimal Invasive Surgery (MIS)?",
+    answer: "Minimal Invasive Surgery (MIS) is an advanced surgical technique that uses smaller incisions, specialized instruments, and imaging technology. This approach results in less tissue damage, reduced pain, faster recovery times, and shorter hospital stays compared to traditional open surgery.",
   },
   {
     question: "How can I book an appointment?",
@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     question: "What should I bring to my first consultation?",
-    answer: "Please bring all relevant medical records, previous imaging reports (MRI, CT scans), current medications list, insurance information, and any referral letters from your primary physician. This helps Dr. Nayak provide the most comprehensive evaluation.",
+    answer: "Please bring IMAGING REPORT WITH FILM, all relevant medical records, previous imaging reports (MRI, CT scans), current medications list, insurance information, and any referral letters from your primary physician. This helps Dr. Satish Nayak provide the most comprehensive evaluation.",
   },
 ];
 
