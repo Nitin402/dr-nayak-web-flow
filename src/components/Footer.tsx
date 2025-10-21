@@ -30,11 +30,15 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 flex-shrink-0" />
-                <p className="opacity-90">Available for consultation</p>
+                <a href="tel:+917388204488" className="opacity-90 hover:opacity-100 transition-opacity">
+                  +91 7388 204 488
+                </a>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 flex-shrink-0" />
-                <p className="opacity-90">Contact via form above</p>
+                <a href="mailto:neurosurgeonsatishnayak@gmail.com" className="opacity-90 hover:opacity-100 transition-opacity">
+                  neurosurgeonsatishnayak@gmail.com
+                </a>
               </div>
             </div>
           </div>

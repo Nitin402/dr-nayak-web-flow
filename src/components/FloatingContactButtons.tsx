@@ -11,7 +11,7 @@ const FloatingContactButtons = () => {
         asChild
       >
         <a 
-          href="https://wa.me/" 
+          href="https://wa.me/918299834287" 
           target="_blank" 
           rel="noopener noreferrer"
           aria-label="Contact via WhatsApp"
@@ -27,7 +27,7 @@ const FloatingContactButtons = () => {
         asChild
       >
         <a 
-          href="tel:+91" 
+          href="tel:+917388204488" 
           aria-label="Call Dr. Satish Nayak"
         >
           <Phone className="w-6 h-6" />

@@ -150,7 +150,7 @@ const ContactSection = () => {
                     className="w-full bg-[#25D366] hover:bg-[#20BA5A] text-white"
                     asChild
                   >
-                    <a href="https://wa.me/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/918299834287" target="_blank" rel="noopener noreferrer">
                       <MessageSquare className="w-5 h-5 mr-2" />
                       Chat on WhatsApp
                     </a>
@@ -208,7 +208,7 @@ const ContactSection = () => {
                     asChild
                   >
                     <a 
-                      href="https://maps.google.com/?q=Apollo+Hospitals+Indore" 
+                      href="https://maps.app.goo.gl/Aa5aKVVLcYFXhBWeA" 
                       target="_blank" 
                       rel="noopener noreferrer"
                     >
