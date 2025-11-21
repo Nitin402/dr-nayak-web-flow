@@ -3,11 +3,13 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { MessageSquare, Instagram, Calendar } from "lucide-react";
+import { MessageSquare, Instagram, Calendar, MapPin, Star } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
 
 const ContactSection = () => {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -15,7 +17,7 @@ const ContactSection = () => {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     // Basic validation
@@ -28,13 +30,32 @@ const ContactSection = () => {
       return;
     }
 
-    toast({
-      title: "Form Submitted!",
-      description: "We'll get back to you within 24 hours.",
-    });
+    setIsSubmitting(true);
 
-    // Reset form
-    setFormData({ name: "", email: "", phone: "", message: "" });
+    try {
+      const { error } = await supabase.functions.invoke('send-contact-email', {
+        body: formData
+      });
+
+      if (error) throw error;
+
+      toast({
+        title: "Form Submitted!",
+        description: "We'll get back to you within 24 hours.",
+      });
+
+      // Reset form
+      setFormData({ name: "", email: "", phone: "", message: "" });
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      toast({
+        title: "Submission Failed",
+        description: "Please try again or contact us directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -125,9 +146,10 @@ const ContactSection = () => {
                     type="submit" 
                     size="lg" 
                     className="w-full bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-all shadow-lg"
+                    disabled={isSubmitting}
                   >
                     <Calendar className="w-5 h-5 mr-2" />
-                    Submit Request
+                    {isSubmitting ? "Submitting..." : "Submit Request"}
                   </Button>
                 </form>
               </CardContent>
@@ -196,12 +218,15 @@ const ContactSection = () => {
               {/* Map Location */}
               <Card className="shadow-xl border-border/50 hover:shadow-2xl transition-shadow">
                 <CardHeader>
-                  <CardTitle className="text-xl font-serif">Location</CardTitle>
+                  <CardTitle className="text-xl font-serif flex items-center gap-2">
+                    <MapPin className="w-5 h-5 text-primary" />
+                    Location
+                  </CardTitle>
                   <CardDescription>
                     Apollo Hospitals, Indore
                   </CardDescription>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="space-y-3">
                   <Button 
                     className="w-full"
                     variant="outline"
@@ -212,7 +237,22 @@ const ContactSection = () => {
                       target="_blank" 
                       rel="noopener noreferrer"
                     >
+                      <MapPin className="w-4 h-4 mr-2" />
                       Get Directions
+                    </a>
+                  </Button>
+                  <Button 
+                    className="w-full"
+                    variant="outline"
+                    asChild
+                  >
+                    <a 
+                      href="https://g.page/r/CZdCGvxMpFfZEBM/review" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      <Star className="w-4 h-4 mr-2" />
+                      Google Reviews
                     </a>
                   </Button>
                 </CardContent>
