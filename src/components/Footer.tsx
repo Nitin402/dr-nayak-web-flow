@@ -23,9 +23,10 @@ const Footer = () => {
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 mt-1 flex-shrink-0" />
                 <p className="opacity-90">
-                  Apollo Hospitals<br />
-                  Indore, Madhya Pradesh<br />
-                  India
+                  Chandra Hospital<br />
+                  Infront of BRD medical college<br />
+                  Vidhyak Niwas, Gorakhpur<br />
+                  Uttar Pradesh 273013, India
                 </p>
               </div>
               <div className="flex items-center gap-2">
