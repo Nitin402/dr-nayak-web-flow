@@ -223,7 +223,7 @@ const ContactSection = () => {
                     Location
                   </CardTitle>
                   <CardDescription>
-                    Apollo Hospitals, Indore
+                    Chandra Hospital, Gorakhpur
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-3">
@@ -233,7 +233,7 @@ const ContactSection = () => {
                     asChild
                   >
                     <a 
-                      href="https://maps.app.goo.gl/Aa5aKVVLcYFXhBWeA" 
+                      href="https://maps.app.goo.gl/hBGTwGJKZY4gmQiB6" 
                       target="_blank" 
                       rel="noopener noreferrer"
                     >
@@ -247,7 +247,7 @@ const ContactSection = () => {
                     asChild
                   >
                     <a 
-                      href="https://g.page/r/CZdCGvxMpFfZEBM/review" 
+                      href="https://maps.app.goo.gl/hBGTwGJKZY4gmQiB6" 
                       target="_blank" 
                       rel="noopener noreferrer"
                     >
