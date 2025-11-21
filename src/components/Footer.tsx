@@ -1,4 +1,4 @@
-import { Heart, MapPin, Phone, Mail } from "lucide-react";
+import { Heart, MapPin, Phone, Mail, Facebook } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -36,8 +36,14 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 flex-shrink-0" />
-                <a href="mailto:neurosurgeonsatishnayak@gmail.com" className="opacity-90 hover:opacity-100 transition-opacity">
+                <a href="mailto:neurosurgeonsatishnayak@gmail.com" className="opacity-90 hover:opacity-100 transition-opacity break-all">
                   neurosurgeonsatishnayak@gmail.com
+                </a>
+              </div>
+              <div className="flex items-center gap-2">
+                <Facebook className="w-4 h-4 flex-shrink-0" />
+                <a href="https://www.facebook.com/share/1JCzmvbU1L/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="opacity-90 hover:opacity-100 transition-opacity">
+                  Follow on Facebook
                 </a>
               </div>
             </div>
