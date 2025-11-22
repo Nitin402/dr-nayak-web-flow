@@ -5,15 +5,15 @@ import { Button } from "@/components/ui/button";
 const researchPapers = [
   {
     title: "Correlation of Clinical and Radiological Presentation in Patients with Craniopharyngiomas",
-    url: "#",
+    url: "https://doi.org/10.4103/0028-3886.338639",
   },
   {
     title: "A Clinical Study of Spontaneous Intracerebral Hemorrhage in Adults",
-    url: "#",
+    url: "https://doi.org/10.4103/jpn.JPN_113_21",
   },
   {
     title: "Epidemiology Of Posterior Fossa Tumors In Paediatric Age Group: An Institutional Study",
-    url: "#",
+    url: "https://www.neuroquantology.com/open-access/Epidemiology+Of+Posterior+Fossa+Tumors+In+Paediatric+Age+Group%253A+An+Institutional+Study_12931/",
   },
 ];
 
